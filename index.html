@@ -2,20 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Emergency Website</title>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
+    <header>
+        <div class="logo">
+            <img src="Assets/med image.jpeg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-area">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Personal Emergency Profile">Personal Emergency Profile</a></li>
+                <li><a href="#Doctors">Doctors</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Community Service">Community Service</a></li>
+                <li><a href="Review">Review</a></li>
+        
+            </ul>
+        </nav>
+        
+    </header>
 
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+       
 
+</body>
+</html>
 
 <header class="header">
 
