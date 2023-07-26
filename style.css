@@ -110,7 +110,77 @@ header {
   }
 }
 
-/* */
+.container {
+  padding: relative;
+  padding-right: 100px;
+}
+
+h1,
+p {
+  /* align-items: left; */
+  margin: 10px 0;
+  /* justify-content: left;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+.rightImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  /* height: 300px; */
+}
+
+/* .h1{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-inner-home {
+  flex: 1 1 45rem;
+}
+.main-inner-home .right-content-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+} */
+
+/* main {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+main.wrapper {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.wrapper .cont {
+  width: 20%;
+}
+.wrapper .cont:nth-child(2) {
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .cont h1 {
+  font-size: 80px;
+  color: black;
+}
+.wrapper .cont a {
+  display: inline-block;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color: #f20000;
+} */
+
 /* .*/
 /*:root {
   --red: #f20000;
