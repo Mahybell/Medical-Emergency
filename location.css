@@ -1,0 +1,10 @@
+/* Style the location section */
+.location {
+  text-align: center;
+  padding: 20px;
+}
+
+#map {
+  height: 300px;
+  margin: 20px auto;
+}

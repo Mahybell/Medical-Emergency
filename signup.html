@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="user-profile">
+      <h2>Sign Up</h2>
+      <p>Hi! Welcome, Fill in your information below</p>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" required>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" id="agreeTerms" class="form-check-input">
+          <label for="agreeTerms" class="form-check-label">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="Assets/emergencylogo.jpg" alt="Sign Up Image">
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+  
+</body>
+
+</html>

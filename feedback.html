@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Feedback and Reviews</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+  <header>
+    <h1>Patient Feedback and Reviews</h1>
+  </header>
+
+  <main>
+    <div class="feedback-form">
+      <h2>Leave Your Feedback</h2>
+      <form>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <select id="rating" required>
+            <option value="" disabled selected>Select rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+
+    <div class="reviews">
+      <h2>Recent Reviews</h2>
+      <div class="review">
+        <div class="review-header">
+          <span class="review-rating">5</span>
+          <span class="review-date">12th October, 2023</span>
+        </div>
+        <p class="review-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod</p>
+        <p class="review-author">- John Doe</p>
+      </div>
+
+      <div class="review">
+        <div class="review-header">
+          <span class="review-rating">4</span>
+          <span class="review-date">9th October, 2023</span>
+        </div>
+        <p class="review-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod</p>
+        <p class="review-author">- Jane Smith</p>
+      </div>
+      <!-- Add more reviews here -->
+    </div>
+  </main>
+
+  <script src="feedback.js"></script>
+</body>
+
+</html>

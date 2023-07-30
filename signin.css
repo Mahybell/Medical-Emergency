@@ -1,0 +1,133 @@
+body,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.nav-links ul {
+  display: flex;
+  font-size: 25px;
+  gap: 100px;
+}
+
+.nav-links li {
+  margin-left: px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+}
+
+/* Body styles */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.user-profile {
+  flex: 1;
+  max-width: 50%;
+  padding: 40px;
+}
+
+.user-profile h2 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.user-profile p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #333;
+}
+
+.forgot-password a:hover {
+  color: #ff0000;
+}
+
+.btn-primary {
+  padding: 12px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff0000;
+}
+
+.sign-in-link {
+  padding: 20px 0px;
+  text-align: left;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .user-profile h2 {
+    font-size: 30px;
+  }
+
+  .user-profile p {
+    font-size: 18px;
+  }
+}

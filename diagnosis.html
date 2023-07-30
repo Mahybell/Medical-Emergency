@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Diagnosis</title>
+  <link rel="stylesheet" href="diagnosis.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Medical Diagnosis</h1>
+    <form>
+      <label for="illness">Enter Illness or Disease:</label>
+      <input type="text" id="illness" required>
+      <button type="button" onclick="searchIllness()">Search</button>
+    </form>
+
+    <div id="result">
+      <!-- Result will be displayed here -->
+    </div>
+  </div>
+
+  <script src="diagnosis.js"></script>
+</body>
+
+</html>
