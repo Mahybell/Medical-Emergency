@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Emergency Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/med image.jpeg" alt="logo">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-area">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Live Chat" class="active">Live Chat</a></li>
+                <li><a href="emergencynumbers.html">Emergency Phone Numbers</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="home">
+        <div class="main-home">
+            <div class="main-inner-home">
+                <h1>The Need For</h1>
+                <h1>Prompt Emergency</h1>
+                <h1>Services</h1>
+                <br>
+                <p>We are dedicated to First Aid of Children,</p>
+                <p>Adolescents & Adults. We save lives by giving</p>
+                <p>immediate assitance</p>
+                <br>
+                <br>
+                <a href="signup.html" class="active">Sign Up</a>
+                <a href="signin.html" class="inactive">Sign In</a>
+            </div>
+            <br>
+            <div class="main-inner-home">
+                <div class="right-content-img">
+                    <img src="Assets/Capture 1.jpg" alt="doctor-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <footer>
+        <p>&copy; 2023 MediCare. All rights reserved.</p>
+      </footer>
+</body>
+
+</html>
