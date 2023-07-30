@@ -9,6 +9,9 @@ eyeIcon.addEventListener('click', function () {
   } else {
     passwordInput.type = 'password';
   }
+  signInButton.addEventListener('click', () => {
+    // Redirect to the sign in page when Sign In button is clicked
+    window.location.href = 'dashboard.html'});
   //  // Save user details to localStorage
   //  const userDetails = {
   //   email: email,
@@ -18,4 +21,7 @@ eyeIcon.addEventListener('click', function () {
 
   // // Redirect to dashboard.html after successful signup
   // window.location.href = "dashboard.html";
+  
+
+
 });
