@@ -1,15 +1,16 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f20000;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -17,6 +18,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 form {
@@ -29,6 +31,7 @@ form {
 label {
   font-weight: bold;
   margin-right: 10px;
+  color: #fff;
 }
 
 input[type="text"] {
