@@ -1,16 +1,16 @@
 const medicalDatabase = {
-    "cough": {
-      description: "Cough is a common reflex action that occurs when mucus or foreign irritants drain down the back of the throat.",
-      solution: "Stay hydrated, rest, and take over-the-counter cough medicines if needed.",
-      images: ["cough-image.jpg", "coughingimage.jpg"]
-    },
-    "headache": {
-      description: "Headache is a pain in the head or neck region.",
-      solution: "Take pain relievers and rest in a quiet, dark room.",
-      images: ["headache-image.jpg", "headavhe.jpg"]
-    },
-  
-    "fever": {
+  "cough": {
+    description: "Cough is a common reflex action that occurs when mucus or foreign irritants drain down the back of the throat.",
+    solution: "Stay hydrated, rest, and take over-the-counter cough medicines if needed.",
+    images: ["cough-image.jpg", "coughingimage.jpg"]
+  },
+  "headache": {
+    description: "Headache is a pain in the head or neck region.",
+    solution: "Take pain relievers and rest in a quiet, dark room.",
+    images: ["headache-image.jpg", "headavhe.jpg"]
+  },
+
+  "fever": {
     description: `Fever occurs when a person's body temperature becomes too hot, indicating a response to various illnesses. While a fever itself is not a sickness, it serves as a sign of an underlying condition. A high fever (over 39°C or 102°F) can be particularly concerning, especially in young children.`,
     solution: `Here are some essential tips for managing fever in children
     1. Encourage your child to stay hydrated by drinking plenty of fluids.
@@ -151,18 +151,12 @@ Always prioritize seeking appropriate medical attention if you or someone else e
        - Shove your fist inward and upward.
     
     Remember, it's crucial to act quickly and confidently when dealing with choking to provide effective first aid. Always seek medical help even if you successfully dislodge the obstruction to ensure the person's well-being.
-    If the person still cannot breathe, call emergency line, get the person to the nearest hospital.`,
+    If the person still cannot breathe, call emergecy line, get the person to the nearest hospital.`,
 
     images: ["", ""]
   },
-  
-    "sore throat": {
-      description: "A sore throat is pain, scratchiness or irritation of the throat that often worsens when you swallow. The most common cause of a sore throat (pharyngitis) is a viral infection, such as a cold or the flu. A sore throat caused by a virus resolves on its own.",
-      solution: "Try hot tea with lemon or some hot soup",
-      images: ["sorethroatimage.jpg", "sore-throat-image.jpg"]
-    },
 
-    "drowning": {
+  "drowning": {
     description: "A person who has stopped breathing has only 4 minutes to live! You must act fast!",
     solution: `Call 112 If:
     Someone is drowning.
@@ -209,7 +203,7 @@ Always prioritize seeking appropriate medical attention if you or someone else e
     Note that these instructions are not meant to replace CPR training. Classes are available through the Nigerian Red Cross, local hospitals, you can also watch proper emergencies.`,
     images: ["", ""]
   },
- "nosebleed": {
+  "nosebleed": {
     description: "How to stop nose bleeds.",
     solution: `1. Sit quietly and upright.
     2. Blow the nose gently to remove mucus and blood.
@@ -218,26 +212,26 @@ Always prioritize seeking appropriate medical attention if you or someone else e
     Leave the cotton in place for a few hours after the bleeding stops; then take it out very carefully.`,
     images: ["", ""]
   },
+
   
-    // Add more illnesses and their data here...
-  };
-  
-  function searchIllness() {
-    const input = document.getElementById("illness").value.toLowerCase();
-    const resultDiv = document.getElementById("result");
-  
-    if (medicalDatabase[input]) {
-      const result = medicalDatabase[input];
-      const resultHTML = `
-        <h2>${input}</h2>
-        <p>Description: ${result.description}</p>
-        <p>Solution: ${result.solution}</p>
-        <h3>Images of ${input}:</h3>
-        ${result.images.map(image => `<img src="${image}" alt="${input}" width="200">`).join("")}
-      `;
-      resultDiv.innerHTML = resultHTML;
-    } else {
-      resultDiv.innerHTML = `<p>Illness not found in the database. Please try another search term.</p>`;
-    }
+  // Add more illnesses and their data here...
+};
+
+function searchIllness() {
+  const input = document.getElementById("illness").value.toLowerCase();
+  const resultDiv = document.getElementById("result");
+
+  if (medicalDatabase[input]) {
+    const result = medicalDatabase[input];
+    const resultHTML = `
+      <h2>${input}</h2>
+      <p>Description: ${result.description}</p>
+      <p>Solution: ${result.solution}</p>
+      <h3>Images of ${input}:</h3>
+      ${result.images.map(image => `<img src="${image}" alt="${input}" width="200">`).join("")}
+    `;
+    resultDiv.innerHTML = resultHTML;
+  } else {
+    resultDiv.innerHTML = `<p>Illness not found in the database. Please try another search term.</p>`;
   }
-  
+}
